@@ -8,7 +8,7 @@ import { ResultsComponent } from './results/results.component';
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: DepartmentsComponent
   },
   {
     path: 'departments',
