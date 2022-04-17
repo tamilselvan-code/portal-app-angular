@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
-:root
+::ng-deep :root
 {
     --blue: #287bff;
     --white: #fff;
