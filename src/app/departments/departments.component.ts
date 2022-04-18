@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-departments',
@@ -7,9 +8,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class DepartmentsComponent implements OnInit {
 
-  constructor() { }
+  departments: any = {};
+  constructor(private dataService: DataService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
+    this.dataService.getDepartments().subscribe((data: {})=>{
+      console.log(data);
+      this.departments = data;
+    })  
   }
 
 }
