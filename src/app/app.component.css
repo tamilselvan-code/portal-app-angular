@@ -37,6 +37,7 @@ body{
     color: var(--white);
     border-style: solid;
     border-radius: 15px;
+    margin-bottom: 10px;
 }
 
 .navigation
